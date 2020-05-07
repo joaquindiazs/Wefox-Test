@@ -1,0 +1,33 @@
+{
+  "name": "wefox-test",
+  "version": "1.0.0",
+  "description": "REST API Node.js project that can handle validations and retrieve the data only from the previously mentioned external services",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "dev": "ts-node-dev --transpileOnly --no-notify src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaquindiazs/Wefox-Test.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "joaquindiazschillagi@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaquindiazs/Wefox-Test/issues"
+  },
+  "homepage": "https://github.com/joaquindiazs/Wefox-Test#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^13.13.5",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  }
+}
