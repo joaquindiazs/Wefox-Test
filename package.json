@@ -4,42 +4,21 @@
   "description": "REST API Node.js project that can handle validations and retrieve the data only from the previously mentioned external services",
   "main": "index.js",
   "scripts": {
-    "prebuild": "rm -rf dist",
-    "build": "tsc",
-    "dev": "ts-node-dev --transpileOnly --no-notify src",
     "up": "mkdir -p data && docker-compose up -d",
+    "postup": "npm run dev",
     "stop": "docker-compose stop",
-    "down": "docker-compose down"
+    "down": "docker-compose down",
+    "dev": "npm run dev --prefix api"  
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joaquindiazs/Wefox-Test.git"
   },
-  "keywords": [
-    "express"
-  ],
-  "author": "joaquindiazschillagi@gmail.com",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/joaquindiazs/Wefox-Test/issues"
   },
-  "homepage": "https://github.com/joaquindiazs/Wefox-Test#readme",
-  "dependencies": {
-    "connect-redis": "^4.0.4",
-    "express": "^4.17.1",
-    "express-session": "^1.17.1",
-    "ioredis": "^4.16.3",
-    "mongoose": "^5.9.12"
-  },
-  "devDependencies": {
-    "@types/connect-redis": "0.0.13",
-    "@types/express": "^4.17.6",
-    "@types/express-session": "^1.17.0",
-    "@types/ioredis": "^4.16.0",
-    "@types/mongodb": "^3.5.16",
-    "@types/mongoose": "^5.7.15",
-    "@types/node": "^13.13.5",
-    "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.8.3"
-  }
+  "homepage": "https://github.com/joaquindiazs/Wefox-Test#readme"
 }
