@@ -16,8 +16,12 @@ services:
       - ./data:/data/db
       - ./mongo-init.sh:/docker-entrypoint-initdb.d/mongo-init.sh:ro
 
-  cache:
-    image: redis:alpine
-    ports:
-      - '6379:6379'
-    command: ['--requirepass "secret"']
+#
+#   TODO: connect-redis is not saving the cookie as cache into redis container.
+#         FIst solution set a local environment for Redis
+#
+#  cache:
+#    image: redis:alpine
+#    ports:
+#      - '6379:6379'
+#    command: ['--requirepass "secret"']
