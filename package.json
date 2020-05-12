@@ -1,14 +1,14 @@
 {
   "name": "wefox-test",
   "version": "1.0.0",
-  "description": "REST API Node.js project that can handle validations and retrieve the data only from the previously mentioned external services",
+  "description": "REST API Node.js project that can handle validations and retrieve the data only from external services",
   "main": "index.js",
   "scripts": {
     "up": "mkdir -p data && docker-compose up -d",
     "postup": "npm run dev",
     "stop": "docker-compose stop",
     "down": "docker-compose down",
-    "dev": "npm run dev --prefix api"  
+    "dev": "npm run dev --prefix api"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/joaquindiazs/Wefox-Test/issues"
   },
-  "homepage": "https://github.com/joaquindiazs/Wefox-Test#readme"
+  "homepage": "https://github.com/joaquindiazs/Wefox-Test#readme",
+  "dependencies": {}
 }
