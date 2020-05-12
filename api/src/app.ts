@@ -8,12 +8,7 @@ export const createApp = (store: Store) => {
 
 	app.use(express.json())
 
-	app.use(
-		session({ 
-			...SESSION_OPTIONS, 
-			store
-		})
-	)
+	app.use(session({ ...SESSION_OPTIONS, store }))
 
 	app.use(register)
 

@@ -12,9 +12,11 @@ import { createApp } from './app'
 
   const client = new Redis(REDIS_OPTIONS)
 
+  //console.log(`CLIENT ::::: ${JSON.stringify(client)}`)
+
   const store = new RedisStore({ client })
-
+  
   const app = createApp(store)
-
+  
   app.listen(APP_PORT, () => console.log(`http://localhost:${APP_PORT}`))
 })()
