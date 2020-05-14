@@ -4,6 +4,7 @@
 
 - node v12.7 (using asdf)
 - npm 6.10.0
+- redis 6.0.0 (using asdf)
 - docker 19.03
 
 ## Setup 
