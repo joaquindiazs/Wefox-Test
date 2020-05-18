@@ -28,10 +28,12 @@ docker exec -it wefox-test_cache_1 redis-cli -a secret
 
 ## curl 
 
-
 ```sh
 curl -v -X POST localhost:3000/register -H 'Content-Type: application/json' \
-	-d '{ "email": "joaquindiazschillagi@gmail.com", "name": "Joaquin", "password": "secret12", "passwordConfirmation": "secret12" }'
+	-d '{ "email": "joaquindiazschillagi@gmail.com", "name": "Joaquin", "password": "Secret12", "passwordConfirmation": "Secret12" }'
 
-curl -v -X POST localhost:3000/register -H 'Content-Type: application/json' --cookie 'sid=s%3AsRLKa3r_gtEukYdoxnwbQ7WSwr6MCIAr.SfA%2BJIRUbKak1BTjxYvXpbaHk8PEuR0O7yy1OyDVwaI'
+curl -v -X POST localhost:3000/login -H 'Content-Type: application/json' \
+	-d '{ "email": "joaquindiazschillagi@gmail.com", "password": "Secret12" }'
+
+curl -v -X POST localhosts:3000/logout
 ```
