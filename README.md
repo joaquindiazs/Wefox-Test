@@ -1,6 +1,6 @@
 # REST API Node.js
 
-## Prerequisites
+## Env
 
 - node v12.7 (using asdf)
 - npm 6.10.0
